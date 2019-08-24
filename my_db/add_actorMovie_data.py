@@ -10,16 +10,16 @@ def addRecods():
 
     session = Session()
 
-    evaru = Movie("Bala", date(1978,8,19))
+    sira = Movie("Sira", date(1978,8,19))
     #persist data
-    session.add(evaru)
+    session.add(sira)
 
-    adiviShesu = Actor("Suresh", date(2000,8,19))
+    chiru = Actor("Chiru", date(2000,8,19))
     #persist data
-    session.add(adiviShesu)
+    session.add(chiru)
 
     #movies and actors relationship establishments
-    evaru.actors = [adiviShesu]
+    sira.actors = [chiru]
 
 
     #commit and close session
